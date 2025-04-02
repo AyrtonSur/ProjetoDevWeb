@@ -155,15 +155,42 @@
   color: #D2D2D2;
 }
 
-.carousel-control-prev, .carousel-control-next {
-  position: relative !important;
-}
-
-.carousel-inner, .carousel-item {
+.carousel-item {
   width: initial !important;
+  left: 50%;
+  transform: translate(-50%);
+  transition: none;
+  display: none;
 }
 
-.grow {
+.games-carousel .carousel-item-start {
+  display: none !important;
+}
+
+.games-carousel .carousel-item-next {
+  display: block !important;
+}
+
+.game-main-image {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.side-div {
+  width: 50%;
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.active {
+  display: block;
+}
+
+.games-carousel .grow {
   flex-grow: 1;
 }
 
