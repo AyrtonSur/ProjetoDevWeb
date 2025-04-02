@@ -3,6 +3,35 @@
   --nav-font: Arial, Helvetica, sans-serif;
   --header-color: #171D25;
   --main-color: #1D2D4A;
+  scrollbar-color: rgb(96,101,109) rgb(25, 34, 46);
+}
+
+*::-moz-scrollbar-thumb:active {
+  background-color: #004080; /* Cor do thumb ao clicar no Firefox */
+}
+
+/* WebKit (Chrome, Edge, etc.) */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da scrollbar */
+  height: 8px; /* Altura da scrollbar horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6CC1F4; /* Cor padrão do thumb */
+  border-radius: 10px; /* Arredonda os cantos */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #004080; /* Cor do thumb ao passar o mouse */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #002850; /* Cor do thumb ao clicar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #316282; /* Cor do track (fundo da scrollbar) */
+  border-radius: 10px;
 }
 
 .header {
@@ -26,9 +55,10 @@
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
   border-radius: 0.3rem;
   background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+  height: 42px;
 }
 
 .main-nav {
@@ -37,6 +67,14 @@
 
 .nav-home a {
   white-space: nowrap;
+  height: 100%;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.nav-home a:hover {
+	background: linear-gradient(90deg, rgba(33, 162, 255, 0.25) 0%, rgba(33, 162, 255, 0.15) 50%, rgba(50, 50, 51, 0) 100%);
+	text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav {
@@ -68,6 +106,7 @@
   padding: 0.15rem;
   border-radius: 0.25rem;
   border: 0.5px solid transparent;
+  height: 96%;
 }
 
 .input-home > input {
@@ -120,6 +159,7 @@
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
+    height: auto;
   }
 
   .main-nav {
@@ -130,11 +170,13 @@
     width: 98%;
   }
 
-  .container {
+  .main-nav .container {
     background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
     margin: 0;
     padding: 0;
     border: 0;
     max-width: 100vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
   }
 }
