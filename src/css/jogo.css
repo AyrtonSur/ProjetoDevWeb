@@ -1,0 +1,76 @@
+#carouselExample{
+    max-width: 500px;
+    min-height: 130px;
+    margin: auto;
+    
+    
+}
+.carousel-inner .row {
+    margin: 0;
+}
+
+.carousel-inner .col-4 {
+    padding: 5px;
+}
+
+#carouselExample .carousel-indicators .botao {
+    background-color: #0C1218; 
+    border-radius: 3px;
+    height: 18px;
+    width: 60px;
+    cursor: pointer;
+    margin: 0; 
+    opacity: 1;
+}
+#carouselExample .carousel-indicators .botao-voltar {
+    background-color: #192734;
+    width: 38px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    margin: 0px;
+    font-size: 12px;
+    border-radius: 3px;
+    background-image: url("../assets//volta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1px;
+    opacity: 1;
+}
+#carouselExample .carousel-indicators .botao-avancar {
+    opacity: 1;
+    background-color: #192734; 
+    width: 38px;
+    height: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    margin: 0px;
+    font-size: 12px;
+    border-radius: 3px;
+    background-image: url("../assets//avanca.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1px;
+}
+
+#carouselExample .carousel-indicators .botao-voltar:hover{
+    opacity: 1;
+    background-image: url("../assets//voltar_branco.png");
+    background-color: #315A77;
+}
+#carouselExample .carousel-indicators .botao-avancar:hover{
+    opacity: 1;
+    background-image: url("../assets//avancar_branco.png");
+    background-color: #315A77;
+}
+
+
+
+
+#carouselExample .carousel-indicators .active {
+    background-color: #314e66; /* Cor azul mais clara */
+}
