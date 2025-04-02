@@ -55,8 +55,8 @@
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  padding: 0rem 0.3rem 0rem 0.3rem;
-  border-radius: 0.3rem;
+  padding-right: 0.2rem;
+  border-radius: 2px;
   background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
   height: 42px;
 }
@@ -70,6 +70,11 @@
   height: 100%;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
+  border-radius: 2px;
+}
+
+.nav-home a:first-child {
+  padding-left: 6px;
 }
 
 .nav-home a:hover {
@@ -146,6 +151,21 @@
   color: transparent;
 }
 
+.related {
+  color: #D2D2D2;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: relative !important;
+}
+
+.carousel-inner, .carousel-item {
+  width: initial !important;
+}
+
+.grow {
+  flex-grow: 1;
+}
 
 @media (max-width: 768px) {
   .brand-hamburguer {
@@ -176,7 +196,12 @@
     padding: 0;
     border: 0;
     max-width: 100vw;
-    padding-top: 0.5rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 12px;
+  }
+
+  .nav-home a {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
   }
 }
