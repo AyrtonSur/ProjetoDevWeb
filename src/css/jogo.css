@@ -123,12 +123,40 @@
   color: #c6d4df;
 }
 .analise{
-    text-transform: uppercase;
-    font-size: 14px;
-    padding-right: 10px;
-    min-width: 94px;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-right: 10px;
+  min-width: 94px;
     color: #a3a3a3;
 }
 .analise-azul{
     color:#359fe6;
+}
+.botao-genero{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border:0px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #67c1f5;
+  display: inline-block;
+    line-height: 19px;
+    padding: 0 7px;
+    color: #67c1f5;
+    background-color: rgba(103, 193, 245, 0.2);
+    box-shadow: none;
+    margin-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.botao-genero:hover{
+  background-color: #67c1f5;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
