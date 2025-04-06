@@ -48,8 +48,8 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="related  mb-5">Recomendados e em Destaque</div>
+    <div class="container main-container">
+      <div class="related mb-3"><p>Recomendados e em Destaque</p></div>
       <div id="carousel" class="carousel slide d-flex row" data-bs-ride="carousel">
 
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -57,46 +57,62 @@
           </button>
           <div class="carousel-inner games-carousel grow">
             <div class="carousel-item  active">
-              <div class="d-flex game-specs">
-                <div class="game-figure"></div>
-                <div class="side-div">
-                  <div data-image="./assets/hollow-knight-scene-1.jpg" class="game-scenes"></div>
-                  <div data-image="./assets/hollow-knight-scene-2.jpg" class="game-scenes"></div>
-                  <div data-image="./assets/icons8-steam-48.png" class="game-scenes"></div>
-                  <div data-image="./assets/icons8-steam-48.png" class="game-scenes"></div>
+              <div class="game-specs" data-bs-toggle="tooltip" data-bs-placement="left" title="Hollow Knight">
+                <div class="game-figure" data-figure-id="figure-1" data-original-image="./assets/hollow-knight-image.jpg"></div>
+                <div class="game-asides">
+                  <h3 class="game-title">Hollow Knight</h3>
+                  <div class="side-div">
+                    <div data-image="./assets/hollow-knight-scene-1.jpg" data-target="figure-1" class="game-scenes"></div>
+                    <div data-image="./assets/hollow-knight-scene-2.jpg" data-target="figure-1" class="game-scenes"></div>
+                    <div data-image="./assets/hollow-knight-scene-3.webp" data-target="figure-1" class="game-scenes"></div>
+                    <div data-image="./assets/hollow-knight-scene-4.jpg" data-target="figure-1" class="game-scenes"></div>
+                  </div>
+                  <p class="price">R$ 46.99</p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="container d-flex">
-                <img src="./assets/header_steam.png" class="game-main-image">
-                <div class="side-div">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
+              <div class="game-specs" data-bs-toggle="tooltip" data-bs-placement="left" title="Marvel Rivals">
+                <div class="game-figure" data-figure-id="figure-2" data-original-image="./assets/MarvelRivals.jpg"></div>
+                <div class="game-asides">
+                  <h3 class="game-title">Marvel Rivals</h3>
+                  <div class="side-div">
+                    <div data-image="./assets/imagem_maior.jpg" data-target="figure-2" class="game-scenes"></div>
+                    <div data-image="./assets/imagem_maior2.jpg" data-target="figure-2" class="game-scenes"></div>
+                    <div data-image="./assets/MarvelRivals_Scene-1.jpg" data-target="figure-2" class="game-scenes"></div>
+                    <div data-image="./assets/MarvelRivals_Scene.jpg" data-target="figure-2" class="game-scenes"></div>
+                  </div>
+                  <p class="price">Gratuito</p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="container d-flex">
-                <img src="./assets/header_steam.png" class="game-main-image">
-                <div class="side-div">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
+              <div class="game-specs" data-bs-toggle="tooltip" data-bs-placement="left" title="Terraria">
+                <div class="game-figure" data-figure-id="figure-3" data-original-image="./assets/Terraria.avif"></div>
+                <div class="game-asides">
+                  <h3 class="game-title">Terraria</h3>
+                  <div class="side-div">
+                    <div data-image="./assets/terraria-scene.webp" data-target="figure-3" class="game-scenes"></div>
+                    <div data-image="./assets/terraria-scene-1.png" data-target="figure-3" class="game-scenes"></div>
+                    <div data-image="./assets/terraria-scene-2.webp" data-target="figure-3" class="game-scenes"></div>
+                    <div data-image="./assets/terraria-scene-3.gif" data-target="figure-3" class="game-scenes game-gif" data-static="./assets/static-terraria-scene.png" data-git="./assets/terraria-scene-3.gif"></div>
+                  </div>
+                  <p class="price">R$ 32.99</p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="container d-flex">
-                <img src="./assets/header_steam.png" class="game-main-image">
-                <div class="side-div">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
-                  <img src="./assets/icons8-steam-48.png" class="col-4">
+              <div class="game-specs" data-bs-toggle="tooltip" data-bs-placement="left" title="Skyrim">
+                <div class="game-figure" data-figure-id="figure-4" data-original-image="./assets/Skyrim.jpg"></div>
+                <div class="game-asides">
+                  <h3 class="game-title">Skyrim</h3>
+                  <div class="side-div">
+                    <div data-image="./assets/skyrim-scene-1.jpg" data-target="figure-4" class="game-scenes"></div>
+                    <div data-image="./assets/skyrim-scene-2.webp" data-target="figure-4" class="game-scenes"></div>
+                    <div data-image="./assets/skyrim-scene-3.jpg" data-target="figure-4" class="game-scenes"></div>
+                    <div data-image="./assets/skyrim-scene-4.jpg" data-target="figure-4" class="game-scenes"></div>
+                  </div>
+                  <p class="price">R$ 149.00</p>
                 </div>
               </div>
             </div>
