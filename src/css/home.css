@@ -1,7 +1,7 @@
 * {
   --header-font: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
   --nav-font: Arial, Helvetica, sans-serif;
-  --header-color: #171D25;
+  --header-color: #171a21;
   --main-color: #1D2D4A;
   scrollbar-color: rgb(96,101,109) rgb(25, 34, 46);
 }
@@ -66,6 +66,87 @@
 
 .div-header-nav {
   gap: 1rem;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.modal-header-home {
+  margin: 0;
+}
+
+.modal-header-home .modal-content {
+  background-color: var(--header-color);
+  color: white;
+  border-radius: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-modal-home {
+  max-width: 250px;
+  font-size: 0.6rem;
+  color: rgb(165, 158, 158);
+}
+
+.modal-header-home .modal-body {
+  padding: 0; 
+}
+
+.modal-header-home .modal-body ul {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-header-home .modal-header,
+.modal-header-home .modal-body .list-unstyled > li {
+  border-top: 1px solid #2f3138;
+  border-bottom: 1px solid #000000;
+  min-height: 48px;
+  width: 250px;
+  padding: 0;
+}
+
+.modal-header-home .modal-body .list-unstyled > li:last-child {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header-home .modal-body .list-unstyled > li:last-child a {
+  text-align: left;
+  color: #8a8a8a;
+  font-size: 1.2rem;
+  padding-top: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.modal-header-home .modal-content .modal-body a, 
+.modal-header-home .modal-content h5 {
+  padding-left: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(189, 189, 189);
+  font-weight: 200;
+}
+
+.modal-header-home .modal-content a:hover, 
+.modal-header-home .modal-content h5:hover {
+  cursor: pointer;
+}
+
+.home-header-nav .modal.fade .modal-dialog {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-header-nav .modal.show .modal-dialog {
+  transform: translateX(0);
 }
 
 .brand-hamburguer {
