@@ -220,13 +220,12 @@
   left: 10.2%;
 }
 
-.carousel-item {
+.main-container .carousel-item {
   width: initial !important;
   left: 50%;
   transform: translate(-50%);
   min-width: 70%;
   transition: none;
-  display: none;
   cursor: pointer;
 }
 
