@@ -80,7 +80,7 @@
   background-color: var(--header-color);
   color: white;
   border-radius: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,6 +114,7 @@
   border: none;
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .modal-header-home .modal-body .list-unstyled > li:last-child a {
