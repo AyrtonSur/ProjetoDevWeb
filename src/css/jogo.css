@@ -61,15 +61,20 @@ html, body {
 }
 
 .infos-iniciais {
-  display: flex;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: -ms-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);  display: flex;
   width: auto;
+  margin-right: 12%;
   min-height: 20rem;
   background-color: #173c4f;
 }
 
 .inicio-jogo {
   padding-left: 11.7%;
-  width: 130%;
+  width: 250%;
   height: auto;
     display: flex;
   flex-direction: column;
@@ -165,7 +170,7 @@ html, body {
 }
 .infos-direita img {
   transform: scale(1);
-  width: 71%;
+  width: 100%;
   transform-origin: center; 
 }
 
@@ -227,7 +232,106 @@ html, body {
   color: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+.jogo-bottom{
+  margin-top: 4rem;
+  gap:1rem;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+.esquerda{
+  width: 60%;
+  margin-left: 11%;
+}
+.div-compra{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  height: 4rem;
+  padding-left: 1rem;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #c6d4df;
+  
+  width:100%;
+  background: linear-gradient(-60deg, rgba(226, 244, 255, 0.3) 5%, rgba(84, 107, 115, 0.3) 95%);
+}
+.div-compra h1{
+  font-size: 21px;
+    line-height: 23px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: normal;
+}
+.carrinho{
+  
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+  right: 3%;
+  width: 40%;
+  padding: 3px;
+  border-radius: 3px;
+}
+.carrinho p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+.botao-compra{
+  background: linear-gradient(to bottom, #6fa720 5%, #588a1b 95%);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+}
 
+.direita{
+  padding-right: 0%;
+  width: 50%;
+}
+.Compatibilidade{
+  width: 68%;
+  padding: 1rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+}
+.Compatibilidade-unidade{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  background-color: #15242F;
+    border-radius: 5px;
+  color: #66c0f4;
+  gap:4px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.Compatibilidade-unidade:hover{
+  background-color: #529AC3;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.Compatibilidade-foto{
+  
+  background-color: #101922;
+}
+
+.Compatibilidade-foto img{
+  transform:scale(0.6);
+  border-radius: 5px;
+}
+.Compatibilidade-unidade div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 992px){
   .infos-iniciais{
     flex-direction: column-reverse;
