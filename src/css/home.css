@@ -564,10 +564,38 @@
   text-decoration: none;
 }
 
+.md-games-div {
+  display: flex;
+  gap: 2rem;
+  overflow: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.md-main-games-div {
+  display: none;
+
+}
+
+.md-games-div .game-specs {
+  min-width: 400px;
+  max-width: 400px;
+}
+
 @media (max-width: 768px) {
   .brand-hamburguer {
     width: 100%;
     padding-left: 1rem;
+  }
+
+  .md-main-games-div {
+    display: initial;
+  }
+
+  .main-container {
+    display: none;
   }
 }
 
