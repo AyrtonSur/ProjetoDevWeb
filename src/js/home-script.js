@@ -38,6 +38,24 @@ document.querySelectorAll('.game-figure').forEach((element) => {
   })
 })
 
+document.querySelectorAll('.categories').forEach((element) => {
+  const originalImage = element.getAttribute('data-image')
+  if (originalImage) {
+    element.style.backgroundImage = `url('${originalImage}')`
+  }
+})
+
+document.querySelectorAll('.categories').forEach((category) => {
+  category.addEventListener('mousemove', (event) => {
+    const rect = category.getBoundingClientRect()
+    const mouseX = event.clientX - rect.left
+    const mouseY = event.clientY - rect.top
+    const percentX = (mouseX / rect.width) * 100
+    const percentY = (mouseY / rect.height) * 100
+    category.style.backgroundPosition = `${percentX}% ${percentY}%`
+  })
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
