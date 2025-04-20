@@ -385,6 +385,34 @@ html, body {
   margin-top:6px;
   padding:0px;
 }
+.classificacao{
+  width: 338px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:12px
+}
+.classificacao h1{
+  font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white;
+}
+.classificacao div{
+  display: flex;
+  align-items: flex-start;
+  gap:12px
+}
+.classificacao-texto{
+  margin: 0;
+  font-size: 16px !important;
+  color: #c6d4df !important;
+  line-height: 14px;
+}
 @media (max-width: 400px){
   .idiomas-texto{
     font-size: 12px;
@@ -407,6 +435,9 @@ html, body {
     width: 100%;
   }
   .idiomas{
+    width: 100%;
+  }
+  .classificacao{
     width: 100%;
   }
   .colunas{
