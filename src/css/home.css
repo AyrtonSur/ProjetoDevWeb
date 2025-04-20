@@ -6,19 +6,29 @@
   scrollbar-color: rgb(96,101,109) rgb(25, 34, 46);
 }
 
+body {
+  background-color: var(--main-color);
+}
+
 .header {
   padding: 1rem 0 1rem 0;
   background-color: var(--header-color);
+  min-width: 270px;
 }
 
 .main {
   background-color: var(--main-color);
   min-height: 100vh;
   padding-bottom: 2rem;
+  min-width: 270px;
 }
 
 .header-text {
   font-family: var(--header-font);
+}
+
+.container-nav-home {
+  min-width: 270px;
 }
 
 .nav-home {
@@ -57,6 +67,7 @@
 
 .nav {
   width: 100%;
+  min-width: 200px;
 }
 
 .store {
@@ -493,6 +504,7 @@
 .footer {
   background-color: var(--main-color);
   padding-bottom: 3rem;
+  min-width: 270px;
 }
 
 .footer-div {
@@ -679,5 +691,11 @@
 
   .footer-div {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-brand > img {
+    height: 32px !important;
   }
 }
