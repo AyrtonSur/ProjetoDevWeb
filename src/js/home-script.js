@@ -32,9 +32,34 @@ document.querySelectorAll('.game-gif').forEach((element) => {
   element.style.backgroundImage = `url('${staticUrl}')`
 })
 
+document.querySelectorAll('.game-figure').forEach((element) => {
+  element.addEventListener('click', (event) => {
+    window.location.href = './jogo.html'
+  })
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+  function handleResize() {
+    if (window.innerWidth < 768) { // Define o tamanho da tela (exemplo: 768px)
+      dropdownToggle.removeAttribute('data-bs-toggle'); // Remove o comportamento do dropdown
+      dropdownToggle.classList.remove('dropdown-toggle'); // Remove a classe visual
+    } else {
+      dropdownToggle.setAttribute('data-bs-toggle', 'dropdown'); // Restaura o comportamento do dropdown
+      dropdownToggle.classList.add('dropdown-toggle'); // Restaura a classe visual
+    }
+  }
+
+  // Chama a função ao carregar a página e ao redimensionar
+  handleResize();
+  window.addEventListener('resize', handleResize);
+});
