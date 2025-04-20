@@ -136,19 +136,21 @@ html, body {
   transition: transform 0.7s ease-in-out, opacity 1.5s ease-in-out;
 }
 .infos-iniciais {
+  padding-top: 2rem;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
   background: -o-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
   background: -ms-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);  display: flex;
   width: auto;
-  margin-right: 12%;
+  padding-right: 12%;
   min-height: 20rem;
   background-color: #173c4f;
 }
 
 .inicio-jogo {
-  padding-left: 11.7%;
+  
+  padding-left: 13.2%;
   width: 250%;
   height: auto;
     display: flex;
@@ -158,8 +160,29 @@ html, body {
   background-color: #173c4f;
 }
 
-
-
+.titulo-jogo{
+  color: white;
+    font-family: Motiva Sans, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 32px;
+    text-overflow: ellipsis;
+}
+.caminho-jogo{
+  color: #8f98a0;
+  font-size: 16px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    
+}
+.caminho-jogo:hover{
+  color:white;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+  color: #8f98a0;
+}
+.breadcrumb{
+  margin-bottom: 0px;
+}
 
 .imagem-exemplo {
   height: 100%;
@@ -549,8 +572,12 @@ html, body {
   .idiomas-texto{
     font-size: 12px;
   }
+  .row{
+    flex-wrap:inherit;
+  }
 }
 @media(max-width:880px){
+  
   .jogo-bottom{
     flex-direction: column;
     gap:32px;
@@ -559,8 +586,10 @@ html, body {
   .direita{
     width: 100%;
     margin-left: 0%;
+    
   }
   .esquerda{
+    
     width: 100%;
   }
   .Compatibilidade{
@@ -590,11 +619,15 @@ html, body {
   }
 }
 @media (max-width: 992px){
+  .titulo{
+    margin-left: 10%;
+  }
   .infos-iniciais{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin: 0px;
+    padding-right: 0px;
   }
   .inicio-jogo{
     width: 100%;
@@ -612,6 +645,7 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 1rem;
   }
   .imagem-direita{
     height: auto;
