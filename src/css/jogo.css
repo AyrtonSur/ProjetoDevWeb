@@ -236,12 +236,11 @@ html, body {
   margin-top: 4rem;
   gap:1rem;
   display: flex;
-  width: 100vw;
-  justify-content: space-between;
+  width: 80%;
+  justify-self: center;
 }
 .esquerda{
   width: 60%;
-  margin-left: 11%;
 }
 .div-compra{
   position: relative;
@@ -294,10 +293,13 @@ html, body {
 
 .direita{
   padding-right: 0%;
-  width: 50%;
+  width: 36%;
+  padding-right: 3%;
+  justify-self: flex-start;
+  margin-left: auto;
 }
 .Compatibilidade{
-  width: 68%;
+  width: 338px;
   padding: 1rem 1rem 0 1rem;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.5)));
 }
@@ -333,14 +335,14 @@ html, body {
   align-items: center;
 }
 .idiomas{
-  width: 68%;
+  width: 338px;
   margin-top: 1rem;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
   padding: 1rem;
 }
 .colunas{
   display: flex;
-  
+  width: 100%;
   justify-content: flex-end;
   align-items: center;
   gap:12px;
@@ -383,11 +385,46 @@ html, body {
   margin-top:6px;
   padding:0px;
 }
+@media (max-width: 400px){
+  .idiomas-texto{
+    font-size: 12px;
+  }
+}
+@media(max-width:880px){
+  .jogo-bottom{
+    flex-direction: column;
+    gap:32px;
+    justify-content: flex-start;
+  }
+  .direita{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .esquerda{
+    width: 100%;
+  }
+  .Compatibilidade{
+    width: 100%;
+  }
+  .idiomas{
+    width: 100%;
+  }
+  .colunas{
+    width: 90%;
+    gap:20%
+  }
+  .idiomas-texto{
+    width: 16px;
+    text-align: center;
+    text-justify: center;
+  }
+}
 @media (max-width: 992px){
   .infos-iniciais{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin: 0px;
   }
   .inicio-jogo{
     width: 100%;
