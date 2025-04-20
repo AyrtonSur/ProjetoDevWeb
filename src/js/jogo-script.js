@@ -7,11 +7,13 @@
         const activeItem = carousel.querySelector('.carousel-item.active'); 
         const activeImage = activeItem.querySelector('img'); 
         if (activeImage) {
-            if (activeImage.src.endsWith("imagem1Menor.jpg")) {
-                previewImage.src = "assets/imagem_maior.jpg";
-            } else if (activeImage.src.endsWith("imagemMenor.jpg")) {
-                previewImage.src = "assets/imagem_maior2.jpg";
+            
+            if (activeImage) {
+                // Substitui o tamanho no link por outro (ex: 1920x1080)
+                const highResSrc = activeImage.src.replace(/(\d+)x(\d+)/, '600x338');
+                previewImage.src = highResSrc;
             }
+            
         }
     }
 
