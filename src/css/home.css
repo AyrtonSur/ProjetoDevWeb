@@ -14,6 +14,7 @@
 .main {
   background-color: var(--main-color);
   min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 .header-text {
@@ -356,7 +357,7 @@
   max-width: 24%;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 32px;
+  border-radius: 16px;
   filter: saturate(0.7);
   box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
   position: relative;
@@ -450,6 +451,119 @@
   transition: background-color 0.3s ease; /* Transição suave */
 }
 
+.login-footer {
+  background-color: #000;
+  padding: 25px 0;
+}
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  color: #8f98a0;
+  gap: 16px;
+  padding-bottom: 2rem;
+}
+
+.login-div .button-login {
+  padding: 4px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #D2E885 !important;
+  background: linear-gradient( to bottom, #a4d007 5%, #536904 95%);
+  border-radius: 4px;
+  border: 2px solid #172030;
+}
+
+.login-div p {
+  text-align: center;
+}
+
+.login-div > p > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-login:hover {
+  background: linear-gradient( to bottom, #a1bf07 5%, #80a006 95%);
+}
+
+.footer {
+  background-color: var(--main-color);
+  padding-bottom: 3rem;
+}
+
+.footer-div {
+  background-color: #171a21;
+  padding: 16px 0 60px 0;
+  padding-bottom: 120px;
+}
+
+.footer-content {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.footer-txt {
+  color: #8F98A0;
+  font-size: 12px;
+}
+
+.footer-txt p{
+  margin-bottom: 0;
+}
+
+.footer-txt a {
+  color: #C6D4DF;
+  text-decoration: none;
+}
+
+.footer_logo {
+  padding-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 32px;
+}
+
+
+.footer_logo_steam,
+.footer_logo_valve {
+  height: 32px;
+}
+
+.footer_logo_valve > img,
+.footer_logo_steam > img {
+  height: 100%;
+}
+
+.bar {
+  border-top: 1px solid #363c44;
+  height: 8px;
+}
+
+.footer-links {
+  margin-top: 8px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #61686D;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer-links a {
+  color: #C6D4DF;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .brand-hamburguer {
     width: 100%;
@@ -532,6 +646,10 @@
   }
 
   .carouselCategory {
+    display: none;
+  }
+
+  .footer-div {
     display: none;
   }
 }
