@@ -59,26 +59,6 @@ html, body {
   align-items: center;
   background-color: #173c4f;
 }
-
-.infos-iniciais {
-  display: flex;
-  width: auto;
-  min-height: 20rem;
-  background-color: #173c4f;
-}
-
-.inicio-jogo {
-  padding-left: 11.7%;
-  width: 130%;
-  height: auto;
-    display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #173c4f;
-}
-
-
 #carouselExample {
   min-height: 110px;
   align-self: flex-start;
@@ -155,6 +135,54 @@ html, body {
 .carousel-item {
   transition: transform 0.7s ease-in-out, opacity 1.5s ease-in-out;
 }
+.infos-iniciais {
+  padding-top: 2rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: -ms-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);  display: flex;
+  width: auto;
+  padding-right: 12%;
+  min-height: 20rem;
+  background-color: #173c4f;
+}
+
+.inicio-jogo {
+  
+  padding-left: 13.2%;
+  width: 250%;
+  height: auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #173c4f;
+}
+
+.titulo-jogo{
+  color: white;
+    font-family: Motiva Sans, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    line-height: 32px;
+    text-overflow: ellipsis;
+}
+.caminho-jogo{
+  color: #8f98a0;
+  font-size: 16px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    
+}
+.caminho-jogo:hover{
+  color:white;
+}
+.breadcrumb-item + .breadcrumb-item::before{
+  color: #8f98a0;
+}
+.breadcrumb{
+  margin-bottom: 0px;
+}
 
 .imagem-exemplo {
   height: 100%;
@@ -165,7 +193,7 @@ html, body {
 }
 .infos-direita img {
   transform: scale(1);
-  width: 71%;
+  width: 100%;
   transform-origin: center; 
 }
 
@@ -227,12 +255,447 @@ html, body {
   color: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+.jogo-bottom{
+  margin-top: 4rem;
+  gap:1rem;
+  display: flex;
+  width: 80%;
+  justify-self: center;
+}
+.esquerda{
+  width: 60%;
+}
+.div-compra{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  height: 4rem;
+  padding-left: 1rem;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #c6d4df;
+  
+  width:100%;
+  background: linear-gradient(-60deg, rgba(226, 244, 255, 0.3) 5%, rgba(84, 107, 115, 0.3) 95%);
+}
+.div-compra h1{
+  font-size: 21px;
+    line-height: 23px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: normal;
+}
+.carrinho{
+  
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+  right: 3%;
+  width: 40%;
+  padding: 3px;
+  border-radius: 3px;
+}
+.carrinho p {
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+.botao-compra{
+  background: linear-gradient(to bottom, #6fa720 5%, #588a1b 95%);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+}
+.sobre-jogo{
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.accordion-edit{
+  border-radius: 5px;
+  color: #66c0f4;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.accordion-botao{
+  font-family: "Motiva Sans", Sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+    background: transparent;
+    border:0px;
+    padding: 0px;
+}.accordion-titulo{
+  text-align: left;
+  text-justify: center;
+}
+.accordion-texto{
+  margin-top: 2rem;
+  color: #acb2b8;
+  font-size: 16px;
+}
+.accordion-texto img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.accordion-texto p{
+  margin-top: 2rem;
+  
 
+}
+.requisitos{
+  margin-top: 3rem;
+  width: 100%;
+}
+.accordion-requisitos{
+  width: 100%;
+  text-align: left;
+}
+.accordion-botao-requisitos{
+  text-align: left;
+  width: 100%;
+}
+.linha-requisito{
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.minimo{
+  width: 50%;
+}
+.recomendado{
+  width: 50%;
+}
+.texto-requisito{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap:12px;
+}
+.texto-requisito p{
+  margin-top: 12px;
+  font-size: 12px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  color: #acb2b8;
+}
+
+.accordion-texto span{
+  width: 40px;
+  margin-top: 18px;
+    margin-bottom: 0px;
+    background-image: none;
+    font-size: 15px;
+    color: #2f89bc;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+.texto-requisito span{
+  color: #61686D;
+    font-size: 12px;
+    margin-right: 4px;
+    font-weight: normal;
+    margin-bottom: 2px;
+    text-transform: none;
+}
+#titulo-requisito{
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #bcc6cd;
+    text-transform: uppercase;
+}
+.direita{
+  padding-right: 0%;
+  width: 36%;
+  padding-right: 3%;
+  justify-self: flex-start;
+  margin-left: auto;
+}
+.Compatibilidade{
+  width: 338px;
+  padding: 1rem 1rem 0 1rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+}
+.Compatibilidade-unidade{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  background-color: #15242F;
+    border-radius: 5px;
+  color: #66c0f4;
+  gap:4px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.Compatibilidade-unidade:hover{
+  background-color: #529AC3;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.Compatibilidade-foto{
+  
+  background-color: #101922;
+}
+
+.Compatibilidade-foto img{
+  transform:scale(0.6);
+  border-radius: 5px;
+}
+.Compatibilidade-unidade div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.idiomas{
+  width: 338px;
+  margin-top: 1rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 1rem;
+}
+.colunas{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap:12px;
+}
+.idiomas-texto{
+  font-family: var(--header-font);
+  font-size: 16px;
+  color: #b0aeac;
+  font-weight: normal;
+  font-weight: 300;
+
+}
+.traco{
+  
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 0.5rem 0;
+}
+.linha{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.linha div{
+  width: 58%;
+  display: flex;
+  justify-content: flex-end;
+  gap:31%;
+}
+.linha svg{
+  color:#359fe6;
+  
+}
+.mais_idiomas{
+  background-color:transparent;
+  color:#359fe6;;
+  border:0px;
+  margin-top:6px;
+  padding:0px;
+}
+.classificacao{
+  width: 338px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:12px
+}
+.classificacao h1{
+  font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: white;
+}
+.classificacao div{
+  display: flex;
+  align-items: flex-start;
+  gap:12px
+}
+.classificacao-texto{
+  margin: 0;
+  font-size: 16px !important;
+  color: #c6d4df !important;
+  line-height: 14px;
+}
+.conquistas{
+  width: 338px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 1rem;
+  padding: 1rem;
+  gap:4px
+}
+.conquistas span{
+  font-size: 16px;
+  color: #8f98a0;
+  
+}
+.conquistas div{
+  display: flex;
+  margin-top: 12px;
+  gap:4px;
+}
+.conquistas button{
+  background-color: #203849;
+  border: 0px;
+  color: #359fe6;
+  font-family: var(--header-font);
+  font-size: 16px;
+  font-weight: normal;
+}
+.conquistas button:hover{
+  background-color: #58A5D2;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.footer{
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  background:#171a21;
+}
+.container-footer{
+  padding: 1rem 13rem 0 13rem;
+}
+.logo-footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-footer img{
+  width: auto;
+  height: auto;
+  
+}
+.texto-footer{
+  color: #8F98A0;
+    font-size: 12px;
+    line-height: 16px;
+}
+.texto-footer span{
+  color: #C6D4DF;
+}
+.container-footer2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: #C6D4DF;
+  
+}
+.container-footer2 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
+.imagems-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  gap:4px;
+}
+.container-footer2-texto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px;
+}
+@media (max-width: 400px){
+  .idiomas-texto{
+    font-size: 12px;
+  }
+  .row{
+    flex-wrap:inherit;
+  }
+}
+@media (max-width: 520px){
+  .container-footer2-texto{
+    flex-direction: column;
+  }
+}
+@media(max-width:880px){
+  
+  .jogo-bottom{
+    flex-direction: column;
+    gap:32px;
+    justify-content: flex-start;
+  }
+  .direita{
+    width: 100%;
+    margin-left: 0%;
+    
+  }
+  .esquerda{
+    
+    width: 100%;
+  }
+  .Compatibilidade{
+    width: 100%;
+  }
+  .idiomas{
+    width: 100%;
+  }
+  .conquistas{
+    width: 100%;
+  }
+  .conquistas div{
+    width: 52px;
+    height: 52px;
+  }
+  .classificacao{
+    width: 100%;
+  }
+  .colunas{
+    width: 90%;
+    gap:20%
+  }
+  .idiomas-texto{
+    width: 16px;
+    text-align: center;
+    text-justify: center;
+  }
+}
 @media (max-width: 992px){
+  .imagems-footer{
+    margin-top: 2rem;
+  }
+  .container-footer{
+    padding: 2rem 2rem 0px 2rem;
+  }
+  .container-footer2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .titulo{
+    margin-left: 10%;
+  }
   .infos-iniciais{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin: 0px;
+    padding-right: 0px;
   }
   .inicio-jogo{
     width: 100%;
@@ -250,6 +713,7 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 1rem;
   }
   .imagem-direita{
     height: auto;
