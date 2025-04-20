@@ -59,31 +59,6 @@ html, body {
   align-items: center;
   background-color: #173c4f;
 }
-
-.infos-iniciais {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
-  background: -o-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
-  background: -ms-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);  display: flex;
-  width: auto;
-  margin-right: 12%;
-  min-height: 20rem;
-  background-color: #173c4f;
-}
-
-.inicio-jogo {
-  padding-left: 11.7%;
-  width: 250%;
-  height: auto;
-    display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #173c4f;
-}
-
-
 #carouselExample {
   min-height: 110px;
   align-self: flex-start;
@@ -160,6 +135,31 @@ html, body {
 .carousel-item {
   transition: transform 0.7s ease-in-out, opacity 1.5s ease-in-out;
 }
+.infos-iniciais {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+  background: -o-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: -ms-linear-gradient(left, rgba(0,0,0,0) 50%,rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);  display: flex;
+  width: auto;
+  margin-right: 12%;
+  min-height: 20rem;
+  background-color: #173c4f;
+}
+
+.inicio-jogo {
+  padding-left: 11.7%;
+  width: 250%;
+  height: auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #173c4f;
+}
+
+
+
 
 .imagem-exemplo {
   height: 100%;
@@ -290,7 +290,52 @@ html, body {
   height: 2rem;
   border-radius: 5px;
 }
-
+.sobre-jogo{
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.accordion-edit{
+  border-radius: 5px;
+  color: #66c0f4;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.accordion-botao{
+  font-family: "Motiva Sans", Sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+    background: transparent;
+    border:0px;
+    padding: 0px;
+}.accordion-titulo{
+  text-align: left;
+  text-justify: center;
+}
+.accordion-texto{
+  margin-top: 2rem;
+  color: #acb2b8;
+  font-size: 16px;
+}
+.accordion-texto p{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.accordion-texto span{
+  margin-top: 18px;
+    margin-bottom: 0px;
+    background-image: none;
+    font-size: 15px;
+    color: #2f89bc;
+    text-transform: none;
+    letter-spacing: 0px;
+}
 .direita{
   padding-right: 0%;
   width: 36%;
