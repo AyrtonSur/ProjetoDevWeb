@@ -4,6 +4,10 @@ body,
   overflow-x: hidden;
 }
 
+.main {
+  padding-bottom: 0;
+}
+
 .header {
   z-index: 30;
   position: absolute;
@@ -222,7 +226,7 @@ body,
 #about-games {
   min-height: 100vh;
   position: relative;
-
+  padding-bottom: 3rem;
 }
 
 .about-games-gradient {
@@ -238,7 +242,7 @@ body,
 }
 
 .about-games-content {
-  min-height: 100vh;
+  min-height: 800px;
   height: 100vh;
   position: relative;
 }
@@ -326,6 +330,12 @@ body,
 }
 
 .game_image {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.game_image.active {
   opacity: 0.8;
 }
 
@@ -377,6 +387,114 @@ body,
 
 .about-games-content {
   overflow: hidden;
+}
+
+.about-steam-area {
+  min-height: 800px;
+  background: rgba(0,0,0,.21);
+  padding-top: 40px;
+}
+
+.about-steam-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-community-txt,
+.about-hardware-txt,
+.about-steamworks-txt {
+  font-size: 20px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+}
+
+.community,
+.hardware,
+.steamworks {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.community-txt-content,
+.hardware-txt-content,
+.steamworks-txt-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-align: start;
+  max-width: 600px;
+  width: 35%;
+}
+
+.community-txt-content > h2,
+.hardware-txt-content > h2,
+.steamworks-txt-content > h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  line-height: 1;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.about-community-btn,
+.about-hardware-btn,
+.about-steamworks-btn {
+  text-align: center;
+}
+
+.about-community-btn > a,
+.about-hardware-btn > a,
+.about-steamworks-btn > a {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #2EBFFF;
+  display: block;
+  text-decoration: none;
+}
+
+.about-community-btn > a::after,
+.about-hardware-btn > a::after,
+.about-steamworks-btn > a::after {
+  width: 40px;
+  display: inline-block;
+  text-align: left;
+  transition: padding 100ms ease-out, width 100ms ease-out;
+  content: "➜";
+}
+
+.about-community-btn > a:hover::after,
+.about-hardware-btn > a:hover::after,
+.about-steamworks-btn > a:hover::after {
+  padding-left: 10px;
+}
+
+.community-image,
+.hardware-image,
+.steamworks-image {
+  width: 50%;
+}
+
+.community-image img,
+.hardware-image img,
+.steamworks-image img {
+  max-width: 100%;
+}
+
+@media (max-width: 1180px) {
+  .community,
+  .hardware {
+    width: 800px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -462,12 +580,44 @@ body,
   }
 
   .game_image {
+    box-shadow: none;
+  }
+
+  .game_image.active {
     opacity: 0.4;
   }
 
   .game_image a img {
     transform: scale(0.6);
   }
+
+  .community,
+  .steamworks {
+    flex-direction: column-reverse;
+    width: auto;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .hardware {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .community-image,
+  .hardware-image,
+  .steamworks-image {
+    width: 90%;
+  }
+
+  .community-txt-content,
+  .hardware-txt-content,
+  .steamworks-txt-content {
+    width: 90%;
+  }
+
 }
 
 @media (max-width: 720px) {
@@ -481,6 +631,24 @@ body,
 
   .about-games-btn a {
     font-size: 4.5vw;
+  }
+
+  .about-community-btn a,
+  .about-hardware-btn a,
+  .about-steamworks-btn a {
+    font-size: 4.5vw;
+  }
+
+  .community-txt-content .about-community-txt,
+  .hardware-txt-content .about-hardware-txt,
+  .steamworks-txt-content .about-steamworks-txt {
+    font-size: 4.5vw;
+  }
+
+  .community-txt-content h2,
+  .hardware-txt-content h2,
+  .steamworks-txt-content h2 {
+    font-size: 8vw;
   }
 }
 

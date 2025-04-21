@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2)
         const startPosition = window.pageYOffset
         const distance = targetPosition - startPosition
-        const duration = 200
+        const duration = 400
         let start = null
       
         function animationStep(timestamp) {
@@ -61,10 +61,30 @@ document.addEventListener('DOMContentLoaded', () => {
     gameImage.style.transform = `translateY(${offset}px)`
 
     window.addEventListener('scroll', () => {
-      const scrollOffset = window.scrollY * 0.15
+      const scrollOffset = window.scrollY * 0.15 
       gameImage.style.transform = `translateY(${offset + scrollOffset}px)`
     })
   })
+
+  const gamesTxtContent = document.querySelector('.games-txt-content');
+
+  if (gamesTxtContent) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          gameImages.forEach((gameImage) => {
+            gameImage.classList.add('active')
+          })
+        } else {
+          gameImages.forEach((gameImage) => {
+            gameImage.classList.remove('active')
+          })
+        }
+      })
+    })
+
+    observer.observe(gamesTxtContent)
+  }
 })
 
 document.addEventListener('visibilitychange', () => {
