@@ -186,7 +186,22 @@
   text-align: center;
 }
 
+.modal-content {
+  background-color: #32353c;
+}
 
+.modal-header {
+  color:#1999ff;
+  border-bottom: none;
+}
+
+.modal-body {
+  color: #afafaf;
+}
+
+.btn-close {
+  color: #afafaf;
+}
 
 @media (max-width: 768px) {
   .login-form {

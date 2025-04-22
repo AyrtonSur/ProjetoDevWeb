@@ -61,23 +61,45 @@ document.addEventListener('DOMContentLoaded', function () {
   const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
+
+  // Verifica se há uma mensagem no localStorage
+  const message = localStorage.getItem('loginSuccessMessage')
+
+  if (message) {
+    // Cria o alerta do Bootstrap
+    const alertContainer = document.createElement('div')
+    alertContainer.className = 'alert login-success alert-success alert-dismissible fade show'
+    alertContainer.role = 'alert'
+    alertContainer.innerHTML = `
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+    `
+
+    // Insere o alerta no topo da página
+    const mainContent = document.querySelector('main') // Ajuste o seletor conforme necessário
+    if (mainContent) {
+      mainContent.prepend(alertContainer)
+    }
+
+    // Remove a mensagem do localStorage para que não apareça novamente
+    localStorage.removeItem('loginSuccessMessage')
+  }
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-  const dropdown = document.querySelector('.dropdown');
-  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const dropdown = document.querySelector('.dropdown')
+  const dropdownToggle = document.querySelector('.dropdown-toggle')
 
   function handleResize() {
-    if (window.innerWidth < 768) { // Define o tamanho da tela (exemplo: 768px)
-      dropdownToggle.removeAttribute('data-bs-toggle'); // Remove o comportamento do dropdown
-      dropdownToggle.classList.remove('dropdown-toggle'); // Remove a classe visual
+    if (window.innerWidth < 768) {
+      dropdownToggle.removeAttribute('data-bs-toggle')
+      dropdownToggle.classList.remove('dropdown-toggle')
     } else {
-      dropdownToggle.setAttribute('data-bs-toggle', 'dropdown'); // Restaura o comportamento do dropdown
-      dropdownToggle.classList.add('dropdown-toggle'); // Restaura a classe visual
+      dropdownToggle.setAttribute('data-bs-toggle', 'dropdown')
+      dropdownToggle.classList.add('dropdown-toggle')
     }
   }
 
-  // Chama a função ao carregar a página e ao redimensionar
-  handleResize();
-  window.addEventListener('resize', handleResize);
-});
+  handleResize()
+  window.addEventListener('resize', handleResize)
+})

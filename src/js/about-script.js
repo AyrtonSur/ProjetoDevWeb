@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(video)
   }
 
-  const scrollToLink = document.querySelector('.scroll-to');
+  const scrollToLink = document.querySelector('.scroll-to')
 
   if (scrollToLink) {
     scrollToLink.addEventListener('click', (event) => {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const ease = progress / duration
           const scrollAmount = startPosition + distance * ease
       
-          window.scrollTo(0, scrollAmount);
+          window.scrollTo(0, scrollAmount)
       
           if (progress < duration) {
             requestAnimationFrame(animationStep)
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  const gameImages = document.querySelectorAll('.game_image');
+  const gameImages = document.querySelectorAll('.game_image')
 
   gameImages.forEach((gameImage) => {
     const relativespeed = parseFloat(gameImage.getAttribute('data-rellax-speed')) || 1
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  const gamesTxtContent = document.querySelector('.games-txt-content');
+  const gamesTxtContent = document.querySelector('.games-txt-content')
 
   if (gamesTxtContent) {
     const observer = new IntersectionObserver((entries) => {
