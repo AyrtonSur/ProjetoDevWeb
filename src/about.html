@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
   <link rel="icon" href="./assets/icons8-steam-48.png" type="image/x-icon">
   <link href="./css/bootstrap.css" rel="stylesheet">
   <link href="./css/home.css" rel="stylesheet">
-  <link href="./css/login.css" rel="stylesheet">
+  <link href="./css/about.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -88,64 +88,194 @@
       </div>
     </nav>
   </header>
+
   <main class="main">
-    <div class="main-login">
-      <p class="login-txt">Iniciar sessão</p>
-      <div class="login-form">
-        <div class="mb-3">
-          <label for="inputUsername" class="form-label username-label">Iniciar sessão com o nome de usuário</label>
-          <input class="form-control" id="inputUsername" placeholder="">
-          <div id="usernameError" class="invalid-feedback"></div>
-        </div>
-        <div class="mb-3">
-          <label for="inputPassword" class="form-label password-label">Senha</label>
-          <input type="password" class="form-control" id="inputPassword" placeholder="">
-          <div id="passwordError" class="invalid-feedback"></div>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="rememberMe">
-          <label class="form-check-label" for="rememberMe">Lembre-me</label>
-        </div>
-        <div class="mb-5 form-submit-button">
-          <button class="submit-button" type="submit">Iniciar sessão</button>
-        </div>
-        <a class="not-able-to-autenticate" href="#">Não consigo iniciar a sessão</a>
-      </div>
-    </div>
-  </main>
-  <aside>
-    <div class="modal fade" id="loginProgressModal" tabindex="-1" aria-labelledby="loginProgressModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginProgressModalLabel">Processando Login</h5>
+    <div class="about-header">
+      <div class="about-header-main">
+        <div class="about-header-content">
+          <div class="steam-logo">
+            <img src="./assets/logo_steam.svg">
           </div>
-          <div class="modal-body">
-            <p>Aguarde enquanto processamos seu login...</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          <p class="subtitle">A Steam é o destino perfeito para jogar, criar jogos e conversar.</p>
+          <div class="online-stats">
+            <div class="online">
+              <div class="online-stat-label players-on-line">on-line</div>
+              <p>26,375,082</p>
+            </div>
+            <div class="playing">
+              <div class="online-stat-label players-in-game">jogando agora</div>
+              <p>7,358,989</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-install-steam">
+          <div class="about-install">
+            <a href="https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe" class="about-install-link">Instale a Steam</a>
+          </div>
+          <div class="about-installers">
+            <div class="available-os">
+              Também disponível para:
+            </div>
+            <div class="platforms">
+              <a class="platform_icon" href="https://cdn.fastly.steamstatic.com/client/installer/steam.dmg">
+                <img src="./assets/macos.svg">
+              </a>
+              <a class="platform_icon" href="https://cdn.fastly.steamstatic.com/client/installer/steam.deb">
+                <img src="./assets/steamdeck.svg">
+              </a>
+              <a class="platform_icon" href="https://support.google.com/chromebook?p=steam_on_chromebook">
+                <img src="./assets/chromebook.svg">
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </aside>
-
-  <footer class="footer">
-    <div class="login_footer_row">
-      <div class="login_main_row">
-        <div class="headline">Primeira vez no Steam?</div>
-        <a href="#" class="register_button">
-          <span>Cadastrar-se</span>
-        </a>
+      <div class="about-video">
+        <video width="100%" height="auto" autoplay="" muted="" loop="" playsinline="" poster="./assets/">
+          <source src="./assets/about_hero_loop_web.webm" type="video/webm">
+          <source src="./assets/about_hero_loop_web.mp4" type="video/mp4">
+        </video>
+        <div class="about-video-gradient"></div>
       </div>
-      <div class="login_aside_row">
-        <div class="subtext">É gratuito e fácil. Descubra milhares de jogos para jogar com milhões de novos amigos.
-          <a class="login_join_desc about_link" href="./about.html">Saiba mais sobre o Steam</a>
+    </div>
+    <a class="scroll-to" href="#about-games">Saiba mais
+      <span class="arrow-down"></span>
+    </a>
+    <div id="about-games">
+      <div class="about-games-gradient"></div>
+      <div class="about-games-content">
+        <div class="games-col-left">
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="2.3" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="#">
+              <img src="./assets/Skyrim.jpg" style="width: 180px;">
+            </a>
+          </div>
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="1.5" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="./marvel.html">
+              <img src="./assets/MarvelRivals.jpg" style="width: 250px;">
+            </a>
+          </div>
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="1.5" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="./hollow.html">
+              <img src="./assets/hollow-knight-image.jpg" style="width: 230px;">
+            </a>
+          </div>
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="0.8" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="#">
+              <img src="./assets/Terraria.avif" style="width: 170px;">
+            </a>
+          </div>
+        </div>
+        <div class="games-col-right">
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="3" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="#">
+              <img src="./assets/terraria-scene-3.gif" style="width: 250px;">
+            </a>
+          </div>
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="1.5" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="#">
+              <img src="./assets/skyrim-scene-1.jpg" style="width: 280px;">
+            </a>
+          </div>
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="1.5" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="./hollow.html">
+              <img src="./assets/hollow-knight-scene-4.jpg" style="width: 310px;">
+            </a>
+          </div>
+          <div class="game_image" data-rellax-percentage="0.5" data-rellax-speed="1.2" style="transform: translate3d(0px, 0px, 0px);">
+            <a href="./marvel.html">
+              <img src="./assets/MarvelRivals_Scene.jpg" style="width: 220px;">
+            </a>
+          </div>
+
+
+        </div>
+        <div class="games-txt-content">
+          <h2>
+            Acesse jogos instantaneamente
+          </h2>
+          <div class="about-games-txt">
+            Temos quase 30.000 jogos, indo de grandes produções até pequenos independentes — com bastante coisa no meio. Aproveite as promoções exclusivas, atualizações automáticas e outros grandes privilégios.				
+          </div>
+          <div class="about-games-btn">
+            <a href="./index.html">
+              Navegue pela loja
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="about-steam-area">
+      <div class="about-steam-container">
+        <div class="community" id="community">
+          <div class="community-txt-content">
+            <h2>
+              Participe da Comunidade
+            </h2>
+            <div class="about-community-txt">
+              Conheça novas pessoas, entre em grupos, forme clãs, converse enquanto joga e muito mais! Com mais de 100 milhões de prováveis amigos (ou inimigos), a diversão nunca acaba.			
+            </div>
+            <div class="about-community-btn">
+              <a href="#community">
+                Visite a Comunidade
+              </a>
+            </div>
+          </div>
+          <div class="community-image">
+            <img src="./assets/community-image.png" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="hardware" id="hardware">
+          <div class="hardware-image">
+            <img src="./assets/hardware-image.png" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+          <div class="hardware-txt-content">
+            <h2>
+              Experimente hardwares Steam 
+            </h2>
+            <div class="about-hardware-txt">
+              Criamos o Steam Deck e o headset do Valve Index para tornar ainda melhor a experiência de jogar no computador. 		
+            </div>
+            <div class="about-hardware-btn">
+              <a href="#hardware">
+								Experimente hardwares Steam							
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="steamworks" id="steamworks">
+          <div class="steamworks-txt-content">
+            <h2>
+              Experimente hardwares Steam 
+            </h2>
+            <div class="about-steamworks-txt">
+              Criamos o Steam Deck e o headset do Valve Index para tornar ainda melhor a experiência de jogar no computador. 		
+            </div>
+            <div class="about-steamworks-btn">
+              <a href="#steamworks">
+								Experimente hardwares Steam							
+              </a>
+            </div>
+          </div>
+          <div class="steamworks-image">
+            <img src="./assets/steamworks.png" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
     <div class="footer-div">
+
       <div class="footer-content">
         <div class="bar"></div>
         <div class="footer_logo">
@@ -198,6 +328,7 @@
 
   <script src="./js/bootstrap.bundle.js"></script>
   <script src="./js/jquery-3.7.1.js"></script>
-  <script src="./js/login-script.js"></script>
+  <script src="./js/home-script.js"></script>
+  <script src="./js/about-script.js"></script>
 </body>
 </html>
