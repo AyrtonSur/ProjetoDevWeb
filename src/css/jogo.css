@@ -9,7 +9,9 @@
 body {
   background-color: var(--main-color);
 }
-
+.row{
+  flex-wrap:inherit;
+}
 .header {
   padding: 1rem 0 1rem 0;
   background-color: var(--header-color);
@@ -382,6 +384,7 @@ html, body {
     font-size: 26px;
     line-height: 32px;
     text-overflow: ellipsis;
+  margin: 8px 0 1rem 0;
 }
 .caminho-jogo{
   color: #8f98a0;
@@ -435,7 +438,7 @@ html, body {
 .analise{
   font-family: var(--header-font);
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 12px;
   padding-right: 10px;
   min-width: 94px;
     color: #a3a3a3;
@@ -632,6 +635,18 @@ html, body {
     color: #bcc6cd;
     text-transform: uppercase;
 }
+.spanTerraria{
+    font-size: 14px;
+    margin-top: 30px;
+    max-width: 100%;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: bold;
+    color: white;
+}
+ul{
+  padding-left: 17px;
+  list-style:disc;
+}
 .direita{
   padding-right: 0%;
   width: 36%;
@@ -771,6 +786,7 @@ html, body {
   margin-top: 12px;
   gap:4px;
 }
+
 .conquistas button{
   background-color: #203849;
   border: 0px;
@@ -845,11 +861,7 @@ html, body {
     flex-wrap:inherit;
   }
 }
-@media (max-width: 520px){
-  .container-footer2-texto{
-    flex-direction: column;
-  }
-}
+
 @media(max-width:880px){
   
   .jogo-bottom{
@@ -891,6 +903,9 @@ html, body {
     text-align: center;
     text-justify: center;
   }
+  .conquistas button{
+    font-size: 12px;
+  }
 }
 @media (max-width: 992px){
   .imagems-footer{
@@ -930,6 +945,7 @@ html, body {
     justify-content: center;
     flex-direction: row;
     margin-bottom: 1rem;
+    padding: 0 6rem 0 6rem;
   }
   .imagem-direita{
     height: auto;
@@ -1048,5 +1064,14 @@ html, body {
 @media (max-width: 400px) {
   .navbar-brand > img {
     height: 32px !important;
+  }
+}
+@media (max-width: 520px){
+  .container-footer2-texto{
+    flex-direction: column;
+  }
+  .infos-direita{
+    padding: 0px 0px 0px 0px;
+    padding-left: 2rem;
   }
 }
