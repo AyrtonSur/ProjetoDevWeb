@@ -279,8 +279,9 @@ html, body {
   background-color: #173c4f;
 }
 #carouselExample {
-  min-height: 110px;
+  min-height: 100px;
   align-self: flex-start;
+  max-width: 611px;
 }
 .carousel-inner{
   height: auto;
@@ -292,7 +293,19 @@ html, body {
 .carousel-inner .col-4 {
   padding: 5px;
 }
-
+.carousel-indicators{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
 #carouselExample .carousel-indicators .botao {
   background-color: #0c1218;
   border-radius: 3px;
@@ -408,7 +421,7 @@ html, body {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  margin-bottom: 3px;
+  margin-bottom: 13px;
 }
 .infos-direita img {
   transform: scale(1);
@@ -497,8 +510,7 @@ html, body {
   color: #c6d4df;
   
   width:100%;
-  background: linear-gradient(-60deg, rgba(226, 244, 255, 0.3) 5%, rgba(84, 107, 115, 0.3) 95%);
-}
+background: linear-gradient(-60deg, rgba(147, 161, 169, 0.3) 5%, rgba(48, 58, 61, 0.3) 95%);}
 .div-compra h1{
   font-size: 21px;
     line-height: 23px;
@@ -515,9 +527,9 @@ html, body {
   position: absolute;
   top: 70%;
   right: 3%;
-  width: 40%;
+  gap:12px;
   padding: 3px;
-  border-radius: 3px;
+  padding-left: 12px;
 }
 .carrinho p {
   width: 100%;
@@ -525,12 +537,16 @@ html, body {
   font-size: 13px;
 }
 .botao-compra{
-  background: linear-gradient(to bottom, #6fa720 5%, #588a1b 95%);
-  border: none;
+  background: linear-gradient(to right, #75b022 5%, #588a1b 95%);
+    border: none;
   cursor: pointer;
   width: 100%;
   height: 2rem;
   border-radius: 5px;
+  color: #d2efa9;
+}
+.botao-compra:hover{
+  color:white;
 }
 .sobre-jogo{
   width: 100%;
@@ -767,7 +783,6 @@ ul{
   margin: 0;
   font-size: 16px !important;
   color: #c6d4df !important;
-  line-height: 14px;
 }
 .conquistas{
   width: 338px;
@@ -853,60 +868,9 @@ ul{
   align-items: center;
   gap:4px;
 }
-@media (max-width: 400px){
-  .idiomas-texto{
-    font-size: 12px;
-  }
-  .row{
-    flex-wrap:inherit;
-  }
-}
 
-@media(max-width:880px){
-  
-  .jogo-bottom{
-    flex-direction: column;
-    gap:32px;
-    justify-content: flex-start;
-  }
-  .direita{
-    width: 100%;
-    margin-left: 0%;
-    
-  }
-  .esquerda{
-    
-    width: 100%;
-  }
-  .Compatibilidade{
-    width: 100%;
-  }
-  .idiomas{
-    width: 100%;
-  }
-  .conquistas{
-    width: 100%;
-  }
-  .conquistas div{
-    width: 52px;
-    height: 52px;
-  }
-  .classificacao{
-    width: 100%;
-  }
-  .colunas{
-    width: 90%;
-    gap:20%
-  }
-  .idiomas-texto{
-    width: 16px;
-    text-align: center;
-    text-justify: center;
-  }
-  .conquistas button{
-    font-size: 12px;
-  }
-}
+
+
 @media (max-width: 992px){
   .imagems-footer{
     margin-top: 2rem;
@@ -919,7 +883,7 @@ ul{
     align-items: center;
   }
   .titulo{
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .infos-iniciais{
     flex-direction: column-reverse;
@@ -927,26 +891,22 @@ ul{
     justify-content: center;
     margin: 0px;
     padding-right: 0px;
+    
   }
   .inicio-jogo{
     width: 100%;
     padding: 0px;
+    margin-top: 1rem;
   }
   .imagem-exemplo{
-    width: 80%;
+    width: 90%;
     align-self: center;
   }
   #carouselExample{
     width: 80%;
     align-self: center;
   }
-  .infos-direita{
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-bottom: 1rem;
-    padding: 0 6rem 0 6rem;
-  }
+  
   .imagem-direita{
     height: auto;
     width: 280%;
@@ -961,24 +921,6 @@ ul{
     width: 100%;
     align-self: center;
   }
-  
-}
-@media (max-width: 622px){
-  .infos-direita{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .imagem-direita{
-    height: auto;
-    width: 80%;
-    padding-left: 0px;
-    align-self: flex-start;
-
-    margin-left: 6%;
-  }
-}
-@media (max-width: 992px) {
   .nav-home {
     flex-direction: column;
     gap: 0.5rem;
@@ -1059,13 +1001,117 @@ ul{
   .footer-div {
     display: none;
   }
+  
+}
+@media(max-width:880px){
+  
+  .jogo-bottom{
+    flex-direction: column;
+    gap:32px;
+    justify-content: flex-start;
+  }
+  .direita{
+    width: 100%;
+    margin-left: 0%;
+    
+  }
+  .esquerda{
+    
+    width: 100%;
+  }
+  .Compatibilidade{
+    width: 100%;
+  }
+  .idiomas{
+    width: 100%;
+  }
+  .conquistas{
+    width: 100%;
+  }
+  .conquistas div{
+    width: 52px;
+    height: 52px;
+  }
+  .classificacao{
+    width: 100%;
+  }
+  .colunas{
+    width: 90%;
+    gap:20%
+  }
+  .idiomas-texto{
+    width: 16px;
+    text-align: center;
+    text-justify: center;
+  }
+  .conquistas button{
+    font-size: 12px;
+  }
+}
+@media(max-width:992px) and (min-width:622px){
+  .infos-direita{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    padding: 0 6rem 0 6rem;
+    
+  }
 }
 
+@media (max-width: 622px){
+  .infos-direita{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  .imagem-direita{
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .texto-direita{
+    padding-left:8px ;
+  }
+  .texto-direita p{
+    width: 95%;
+  }
+}
 @media (max-width: 400px) {
   .navbar-brand > img {
     height: 32px !important;
   }
+  .idiomas-texto{
+    font-size: 12px;
+  }
+  .row{
+    flex-wrap:inherit;
+  }
+  .carrinho{
+    position:unset;
+    align-self: flex-end;
+  }
+  .div-compra{
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 8px 1rem 8px;
+  }
+  .div-compra h1{
+    font-size: 16px;
+  }
+  .imagem-direita{
+    width: 100vw;
+    margin-left: 0px;
+  }
+  .texto-direita{
+    padding-left:8px ;
+  }
+  .texto-direita p{
+    width: 95%;
+  }
 }
+
 @media (max-width: 520px){
   .container-footer2-texto{
     flex-direction: column;
