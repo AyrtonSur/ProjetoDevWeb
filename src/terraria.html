@@ -14,30 +14,83 @@
 <body>
 
     <header class="header">
-        <nav class="navbar navbar-dark navbar-expand-md d-flex justify-content-start justify-content-md-center">
-            <div class="d-flex justify-content-flex-start brand-hamburguer">
-                <a href="#" class="navbar-brand order-2 order-md-1 brand">
-                    <img src="./assets/header_steam.png" style="height: 48px" alt="Steam">
+        <nav class="navbar navbar-dark home-header-nav navbar-expand-md d-flex justify-content-start justify-content-md-center">
+          <div class="d-flex justify-content-flex-start brand-hamburguer">
+            <a href="./index.html" class="navbar-brand order-2 order-md-1 brand">
+              <img src="./assets/header_steam.png" style="height: 48px" alt="Steam">
+            </a>
+            
+            <button class="navbar-toggler order-1 order-md-2" type="button" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Botão de navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse order-2">
+            <div class="navbar-nav mr-auto div-header-nav d-flex align-items-center">
+              <div class="dropdown">
+                <a class="dropdown-toggle fw-bolder fs-5 nav-link nav-item store header-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Loja
                 </a>
-
-                <button class="navbar-toggler order-1 order-md-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Botão de navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Home</a></li>
+                  <li><a class="dropdown-item" href="#">Discovery Queue</a></li>
+                  <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                </ul>
+              </div>
+              <a href="#" class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Comunidade</a>
+              <a href="./about.html" class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Sobre</a>
+              <a href="#" class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Suporte</a>
             </div>
-            <div class="collapse navbar-collapse order-2" id="menu">
-                <div class="navbar-nav mr-auto div-header-nav d-flex align-items-center">
-                    <a href="#" class="fw-bolder fs-5 nav-link nav-item store header-text">Loja</a>
-                    <a href="#"
-                        class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Comunidade</a>
-                    <a href="#"
-                        class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Sobre</a>
-                    <a href="#"
-                        class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Suporte</a>
+          </div>
+          <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-header-home position-absolute top-0 start-0">
+              <div class="modal-content">
+                <div class="main-content-modal">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Iniciar sessao</h5>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Loja
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Discovery Queue</a></li>
+                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a href="#" class="text-decoration-none">Comunidade</a></li>
+                      <li><a href="./about.html" class="text-decoration-none">Sobre</a></li>
+                      <li><a href="#" class="text-decoration-none">Suporte</a></li>
+                      <li>
+                        <a href="#" class="text-decoration-none">Alterar idioma</a>
+                        <a href="#" class="text-decoration-none">Baixe o aplicativo movel</a>
+                        <a href="#" class="text-decoration-none">Ver versao para computadores</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="footer-modal-home">
+                  © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                  <span>
+                    <a href="https://store.steampowered.com/privacy_agreement/?snr=1_4_4__global-responsive-menu" target="_blank">Privacy Policy</a>
+                    &nbsp;| &nbsp;
+                    <a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+                    &nbsp;| &nbsp;
+                    <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_4_4__global-responsive-menu" target="_blank">Steam Subscriber Agreement</a>
+                    &nbsp;| &nbsp;
+                    <a href="https://store.steampowered.com/steam_refunds/?snr=1_4_4__global-responsive-menu" target="_blank">Refunds</a>
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
+    
     <main class="main">
         <nav class="navbar navbar-dark main-nav" style="background-color: #173C4F;">
             <div class="container">
@@ -715,6 +768,7 @@
                 </div>
             </div>
         </div>
+    </main>
         <footer class="footer">
             <div class="container-footer">
                 <hr class="traco">
@@ -768,7 +822,7 @@
                 </div>
             </div>
         </footer>
-    </main>
+    
 
 
     <script src="./js/bootstrap.bundle.js"></script>
