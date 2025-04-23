@@ -33,10 +33,20 @@ document.querySelectorAll('.game-gif').forEach((element) => {
 })
 
 document.querySelectorAll('.game-figure').forEach((element) => {
-  element.addEventListener('click', (event) => {
-    window.location.href = './jogo.html'
-  })
-})
+  element.addEventListener('click', () => {
+    //vai no elemento geral "game-specs" e pega o elemento "game-title"
+    const gameSpecs = element.closest('.game-specs');
+    const gameTitle = gameSpecs.querySelector('.game-title');
+
+    if (gameTitle) {
+      //pega o texto do h3 do "game-title" separa a plavara e pega so a primeira e adiciona .html
+      const fullTitle = gameTitle.textContent;
+      const firstWord = fullTitle.split(' ')[0]; 
+      const fileName = firstWord.toLowerCase().replace(/[^a-z0-9\-]/g, '') + '.html'; 
+      window.location.href = `./${fileName}`;
+    }
+  });
+});
 
 document.querySelectorAll('.categories').forEach((element) => {
   const originalImage = element.getAttribute('data-image')
