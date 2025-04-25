@@ -2,7 +2,15 @@
     const previewImage = document.getElementById('carousel-preview');
 
     const carousel = document.getElementById('carouselExample');
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
 
+    if (toastTrigger) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+    })
+}
     function updatePreviewImage() {
         const activeItem = carousel.querySelector('.carousel-item.active'); 
         const activeImage = activeItem.querySelector('img'); 
