@@ -13,93 +13,80 @@
 
 <body>
     <header class="header">
-        <nav
-            class="navbar navbar-dark home-header-nav navbar-expand-md d-flex justify-content-start justify-content-md-center">
-            <div class="d-flex justify-content-flex-start brand-hamburguer">
-                <a href="./index.html" class="navbar-brand order-2 order-md-1 brand">
-                    <img src="./assets/header_steam.png" style="height: 48px" alt="Steam">
+        <nav class="navbar navbar-dark home-header-nav navbar-expand-md d-flex justify-content-start justify-content-md-center">
+          <div class="d-flex justify-content-flex-start brand-hamburguer">
+            <a href="../index.html" class="navbar-brand order-2 order-md-1 brand">
+              <img src="./assets/header_steam.png" style="height: 48px" alt="Steam">
+            </a>
+            
+            <button class="navbar-toggler order-1 order-md-2" type="button" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Botão de navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse order-2">
+            <div class="navbar-nav mr-auto div-header-nav d-flex align-items-center">
+              <div class="dropdown">
+                <a class="dropdown-toggle fw-bolder fs-5 nav-link nav-item store header-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Loja
                 </a>
-
-                <button class="navbar-toggler order-1 order-md-2" type="button" data-bs-toggle="modal"
-                    data-bs-target="#menuModal" aria-label="Botão de navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="./in_construction.html">Home</a></li>
+                  <li><a class="dropdown-item" href="./in_construction.html">Discovery Queue</a></li>
+                  <li><a class="dropdown-item" href="./in_construction.html">Wishlist</a></li>
+                </ul>
+              </div>
+              <a href="./in_construction.html" class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Comunidade</a>
+              <a href="./about.html" class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Sobre</a>
+              <a href="./in_construction.html" class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Suporte</a>
             </div>
-            <div class="collapse navbar-collapse order-2">
-                <div class="navbar-nav mr-auto div-header-nav d-flex align-items-center">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle fw-bolder fs-5 nav-link nav-item store header-text" href="#"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          </div>
+          <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-header-home position-absolute top-0 start-0">
+              <div class="modal-content">
+                <div class="main-content-modal">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Iniciar sessao</h5>
+                  </div>
+                  <div class="modal-body">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="dropdown">
+                          <a class="dropdown-toggle text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Loja
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="/src/index.html">Home</a></li>
-                            <li><a class="dropdown-item" href="/src/in_construction.html">Discovery Queue</a></li>
-                            <li><a class="dropdown-item" href="/src/in_construction.html">Wishlist</a></li>
-                        </ul>
-                    </div>
-                    <a href="/src/in_construction.html"
-                        class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Comunidade</a>
-                    <a href="./about.html"
-                        class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Sobre</a>
-                    <a href="/src/in_construction.html"
-                        class="text-decoration-none text-light fw-bold fs-5 nav-link nav-item header-text">Suporte</a>
-                </div>
-            </div>
-            <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-header-home position-absolute top-0 start-0">
-                    <div class="modal-content">
-                        <div class="main-content-modal">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="menuModalLabel">Iniciar sessao</h5>
-                                <button type="button" class="btn-close" style="margin: 0px;margin-left: 12px;"data-bs-theme= "white" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                            </div>
-                            <div class="modal-body">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <div class="dropdown">
-                                            <a class="dropdown-toggle text-decoration-none" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Loja
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-menu-dark">
-                                                <li><a class="dropdown-item" href="/src/index.html">Home</a></li>
-                                                <li><a class="dropdown-item" href="/src/in_construction.html">Discovery Queue</a></li>
-                                                <li><a class="dropdown-item" href="/src/in_construction.html">Wishlist</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="/src/in_construction.html" class="text-decoration-none">Comunidade</a></li>
-                                    <li><a href="./about.html" class="text-decoration-none">Sobre</a></li>
-                                    <li><a href="/src/in_construction.html" class="text-decoration-none">Suporte</a></li>
-                                    <li>
-                                        <a href="/src/in_construction.html" class="text-decoration-none">Alterar idioma</a>
-                                        <a href="/src/in_construction.html" class="text-decoration-none">Baixe o aplicativo movel</a>
-                                        <a href="/src/in_construction.html" class="text-decoration-none">Ver versao para computadores</a>
-                                    </li>
-                                </ul>
-                            </div>
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./in_construction.html">Home</a></li>
+                            <li><a class="dropdown-item" href="./in_construction.html">Discovery Queue</a></li>
+                            <li><a class="dropdown-item" href="./in_construction.html">Wishlist</a></li>
+                          </ul>
                         </div>
-                        <div class="footer-modal-home">
-                            © Valve Corporation. All rights reserved. All trademarks are property of their respective
-                            owners in the US and other countries.
-                            <span>
-                                <a href="https://store.steampowered.com/privacy_agreement/?snr=1_4_4__global-responsive-menu"
-                                    target="_blank">Privacy Policy</a>
-                                &nbsp;| &nbsp;
-                                <a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
-                                &nbsp;| &nbsp;
-                                <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_4_4__global-responsive-menu"
-                                    target="_blank">Steam Subscriber Agreement</a>
-                                &nbsp;| &nbsp;
-                                <a href="https://store.steampowered.com/steam_refunds/?snr=1_4_4__global-responsive-menu"
-                                    target="_blank">Refunds</a>
-                            </span>
-                        </div>
-                    </div>
+                      </li>
+                      <li><a href="./in_construction.html" class="text-decoration-none">Comunidade</a></li>
+                      <li><a href="./about.html" class="text-decoration-none">Sobre</a></li>
+                      <li><a href="./in_construction.html" class="text-decoration-none">Suporte</a></li>
+                      <li>
+                        <a href="./in_construction.html" class="text-decoration-none">Alterar idioma</a>
+                        <a href="./in_construction.html" class="text-decoration-none">Baixe o aplicativo movel</a>
+                        <a href="./in_construction.html" class="text-decoration-none">Ver versao para computadores</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="footer-modal-home">
+                  © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                  <span>
+                    <a href="https://store.steampowered.com/privacy_agreement/?snr=1_4_4__global-responsive-menu" target="_blank">Privacy Policy</a>
+                    &nbsp;| &nbsp;
+                    <a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+                    &nbsp;| &nbsp;
+                    <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_4_4__global-responsive-menu" target="_blank">Steam Subscriber Agreement</a>
+                    &nbsp;| &nbsp;
+                    <a href="https://store.steampowered.com/steam_refunds/?snr=1_4_4__global-responsive-menu" target="_blank">Refunds</a>
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
         </nav>
     </header>
 
@@ -107,12 +94,12 @@
         <nav class="navbar navbar-dark main-nav mb-3">
             <div class="container container-nav-home">
                 <div class="navbar-nav nav-home align-items-center">
-                    <a href="/src/index.html" class="nav-link nav-item fs-6">Sua loja</a>
-                    <a href="/src/in_construction.html" class="nav-link nav-item fs-6">Novidades e tendências</a>
-                    <a href="/src/in_construction.html" class="nav-link nav-item fs-6">Categorias</a>
-                    <a href="/src/in_construction.html" class="nav-link nav-item fs-6">Loja de pontos</a>
-                    <a href="/src/in_construction.html" class="nav-link nav-item fs-6">Notícias</a>
-                    <a href="/src/in_construction.html" class="nav-link nav-item fs-6">Laboratório</a>
+                    <a href="../index.html" class="nav-link nav-item fs-6">Sua loja</a>
+                    <a href="./in_construction.html" class="nav-link nav-item fs-6">Novidades e tendências</a>
+                    <a href="./in_construction.html" class="nav-link nav-item fs-6">Categorias</a>
+                    <a href="./in_construction.html" class="nav-link nav-item fs-6">Loja de pontos</a>
+                    <a href="./in_construction.html" class="nav-link nav-item fs-6">Notícias</a>
+                    <a href="./in_construction.html" class="nav-link nav-item fs-6">Laboratório</a>
                     <div class="d-flex input-home">
                         <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar">
                         <button class="btn btn-info" type="button"><img src="./assets/icons8-search-50.png"
@@ -361,7 +348,7 @@
                         <div class="toast-container position-fixed bottom-0 end-0 p-3">
                             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="toast-header">
-                                    <img src="/src/assets/logo_steam_footer.png" class="rounded me-2" alt="...">
+                                    <img src="./assets/logo_steam_footer.png" class="rounded me-2" alt="...">
                                     <strong class="me-auto toast-texto2">Steam</strong>
 
                                     <button type="button" class="btn-close" data-bs-dismiss="toast"
@@ -387,7 +374,7 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-texto">
-                                    <img src="/src/assets/sobre-gif1.gif" alt="">
+                                    <img src="./assets/sobre-gif1.gif" alt="">
                                     <p>Marvel Rivals é um jogo de tiro JxJ em equipe com Super Heróis! Reúna um grupo de
                                         estrelas da Marvel,
                                         crie estratégias e combine seus poderes para executar poderosas habilidades de
@@ -517,7 +504,7 @@
                 <div class="Compatibilidade ">
                     <div class="Compatibilidade-unidade">
                         <div class="Compatibilidade-foto">
-                            <img src="/src/assets/icon_mulktplayer.png" alt="">
+                            <img src="./assets/icon_mulktplayer.png" alt="">
                         </div>
                         <div class="Compatibilidade-texto">
                             <p>JXJ on-line</p>
@@ -525,7 +512,7 @@
                     </div>
                     <div class="Compatibilidade-unidade">
                         <div class="Compatibilidade-foto">
-                            <img src="/src/assets/ico_coop.png" alt="">
+                            <img src="./assets/ico_coop.png" alt="">
                         </div>
                         <div class="Compatibilidade-texto">
                             <p>Cooperativo on-line</p>
@@ -533,7 +520,7 @@
                     </div>
                     <div class="Compatibilidade-unidade">
                         <div class="Compatibilidade-foto">
-                            <img src="/src/assets/ico_coop.png" alt="">
+                            <img src="./assets/ico_coop.png" alt="">
                         </div>
                         <div class="Compatibilidade-texto">
                             <p>Multijogador multiplataforma</p>
@@ -541,7 +528,7 @@
                     </div>
                     <div class="Compatibilidade-unidade">
                         <div class="Compatibilidade-foto">
-                            <img src="/src/assets/ico_achievements.png" alt="">
+                            <img src="./assets/ico_achievements.png" alt="">
                         </div>
                         <div class="Compatibilidade-texto">
                             <p>Conquistas Steam</p>
@@ -549,7 +536,7 @@
                     </div>
                     <div class="Compatibilidade-unidade">
                         <div class="Compatibilidade-foto">
-                            <img src="/src/assets/ico_cart.png" alt="">
+                            <img src="./assets/ico_cart.png" alt="">
                         </div>
                         <div class="Compatibilidade-texto">
                             <p>Compras em aplicativo</p>
@@ -859,7 +846,7 @@
                 <div class="classificacao">
                     <h1>Classificação Indicativa: 10 ANOS</h1>
                     <div>
-                        <img src="/src/assets/10.png" alt="">
+                        <img src="./assets/10.png" alt="">
                         <span class="classificacao-texto">Violência</span>
                     </div>
                     <span class="classificacao-texto">Classificação etária: Coordenação de Classificação
@@ -868,9 +855,9 @@
                 <div class="conquistas">
                     <span>Inclui 40 Conquistas Steam</span>
                     <div>
-                        <img src="/src/assets/conquista1.jpg" alt="">
-                        <img src="/src/assets/conquista2.jpg" alt="">
-                        <img src="/src/assets/conquista3.jpg" alt="">
+                        <img src="./assets/conquista1.jpg" alt="">
+                        <img src="./assets/conquista2.jpg" alt="">
+                        <img src="./assets/conquista3.jpg" alt="">
                         <button>Ver todas as 40</button>
                     </div>
                 </div>
@@ -881,8 +868,8 @@
         <div class="container-footer">
             <hr class="traco">
             <div class="logo-footer">
-                <img src="/src/assets/logoFooterSteam.png" alt="">
-                <img src="/src/assets/footerlogo.png" alt="">
+                <img src="./assets/logoFooterSteam.png" alt="">
+                <img src="./assets/footerlogo.png" alt="">
             </div>
             <p class="texto-footer">© 2025 Valve Corporation. Todos os direitos reservados.
                 Todas as marcas são propriedade dos seus respectivos donos nos EUA e
@@ -924,7 +911,7 @@
                             d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                     </svg>
                     <p>|</p>
-                    <img src="/src/assets/bluesky-logo.png" alt="">
+                    <img src="./assets/bluesky-logo.png" alt="">
                 </div>
 
             </div>
