@@ -43,7 +43,7 @@ document.querySelectorAll('.game-figure').forEach((element) => {
       const fullTitle = gameTitle.textContent;
       const firstWord = fullTitle.split(' ')[0]; 
       const fileName = firstWord.toLowerCase().replace(/[^a-z0-9\-]/g, '') + '.html'; 
-      window.location.href = `./${fileName}`;
+      window.location.href = `./src/${fileName}`;
     }
   });
 });
