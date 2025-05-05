@@ -8,13 +8,6 @@ body,
   padding-bottom: 0;
 }
 
-.header {
-  z-index: 30;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .about-header {
   max-width: 940px;
   position: relative;
