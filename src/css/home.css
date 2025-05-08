@@ -620,6 +620,10 @@ body {
   background-size: 2rem;
 }
 
+.modal-title:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .brand-hamburguer {
     width: 100%;

@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
           localStorage.setItem('loginSuccessMessage', 'Login realizado com sucesso!')
 
           // Redireciona para a página index.html
-          window.location.href = 'index.html'
+          window.location.href = '../index.html'
         }, 500)
       }
     }, 300)
