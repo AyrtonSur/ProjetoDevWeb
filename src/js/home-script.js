@@ -113,3 +113,11 @@ document.addEventListener('DOMContentLoaded', function () {
   handleResize()
   window.addEventListener('resize', handleResize)
 })
+
+const menuModalLabel = document.getElementById('menuModalLabel')
+
+if (menuModalLabel) {
+  menuModalLabel.addEventListener('click', () => {
+    window.location.href = './login.html'
+  })
+}
